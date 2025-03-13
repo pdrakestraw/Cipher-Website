@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #e8bf53;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav {
+    background-color: #333333;
+    padding: 10px;
+}
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img.one{
+    width: 20%;
+    height: 20%;
+}
+
+img.two{
+    width: 50%;
+    height: 50%;
+}
+
+.encrypt-box{
+    background: #ffffff;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+.footer {
+    display: none;
+}
+
+.bio_container{
+    display: flex;
+    align-items: center;
+}
+.bio-image {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    margin-left: 20px; /* Adds space between image and text */
+}
