@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn - Caesar Cipher Learning</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 </head>
 <body>
     <header>Caesar Cipher Learning</header>
@@ -18,16 +20,26 @@
     <main class="container">
         <h2>How the Caesar Cipher Works</h2>
         <p>The Caesar Cipher works by shifting each letter of the plaintext by a fixed number of positions in the alphabet. For example, with a shift of 3, 'A' becomes 'D', 'B' becomes 'E', and so on. When it reaches the end of the alphabet, it wraps around.</p>
-    </main>
 
-    <main class="container">
         <h2>Other Ciphers in Cybersecurity</h2>
-        <p><b>Cipher:</b> A simple shift cipher replacing each letter with a letter a fixed number of places away.</p>
-        <p><b>Vigenère Cipher:</b> A polyalphabetic substitution cipher that uses a keyword to shift letters.</p>
-        <p><b>RSA Encryption:</b> A public-key cryptographic system used for secure data transmission.</p>
-        <p><b>AES Encryption:</b> A symmetric encryption standard widely used for securing sensitive data.</p>            
-        <p><b>Hashing (SHA-256):</b> A cryptographic hash function used for password security and data integrity.</p>
+        <div id="accordion">
+            <h3>Cipher</h3>
+            <div><p>A simple shift cipher replacing each letter with a letter a fixed number of places away.</p></div>
+            <h3>Vigenère Cipher</h3>
+            <div><p>A polyalphabetic substitution cipher that uses a keyword to shift letters.</p></div>
+            <h3>RSA Encryption</h3>
+            <div><p>A public-key cryptographic system used for secure data transmission.</p></div>
+            <h3>AES Encryption</h3>
+            <div><p>A symmetric encryption standard widely used for securing sensitive data.</p></div>
+            <h3>Hashing (SHA-256)</h3>
+            <div><p>A cryptographic hash function used for password security and data integrity.</p></div>
+        </div>
     </main>
-
+    <footer>2025 Caesar Cipher Learning</footer>
+    <script>
+      $(function() {
+        $("#accordion").accordion();
+      });
+    </script>
 </body>
 </html>

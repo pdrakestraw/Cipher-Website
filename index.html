@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher Learning - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 <body>
     <header>Caesar Cipher Learning</header>
@@ -17,9 +22,24 @@
     </nav>
     <main class="container">
         <h2>Welcome to Caesar Cipher Learning</h2>
-        <img class = "one" src="cipher_image.jpg" alt="Caesar Cipher Illustration">
-        <p>Discover the fascinating world of cryptography with the Caesar Cipher! Learn how it works, explore its applications, and try it yourself.</p>
+        <p id="typed-text"></p>
+        <img class="one" src="cipher_image.jpg" alt="Caesar Cipher Illustration">
     </main>
     <footer>2025 Caesar Cipher Learning</footer>
+    <script src="script.js"></script>
+    <script>
+      $(function() {
+        var typed = new Typed('#typed-text', {
+          strings: [
+            "Discover the fascinating world of cryptography!",
+            "Learn how the Caesar Cipher works!",
+            "Try encrypting your own message!"
+          ],
+          typeSpeed: 40,
+          backSpeed: 20,
+          loop: true
+        });
+      });
+    </script>
 </body>
 </html>
