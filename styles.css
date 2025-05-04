@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     background-color: #f7f7f7;
     color: #333333;
     text-align: center;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 header {
-    background-color: #e8bf53;
+    background-color: #89d6fb;
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
@@ -22,6 +22,12 @@ nav a {
     text-decoration: none;
     font-size: 18px;
 }
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -36,10 +42,24 @@ img.one{
     height: 20%;
 }
 
+#draggable {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #aaa;
+    cursor: move;
+    margin-top: 20px;
+  }
+  
+
 img.two{
     width: 50%;
     height: 50%;
 }
+
+
 
 .encrypt-box{
     background: #ffffff;
@@ -49,6 +69,9 @@ img.two{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
 }
+
+
+
 .footer {
     display: none;
 }
@@ -58,7 +81,84 @@ img.two{
     align-items: center;
 }
 .bio-image {
-    width: 150px; /* Adjust as needed */
+    width: 150px;
     height: auto;
-    margin-left: 20px; /* Adds space between image and text */
+    margin-left: 20px;
 }
+
+.button  {
+    background-color: #89d6fb;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    border-width: 1px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 20px
+}
+
+.button :hover  {
+    background-color: #d4f0fc;
+}
+
+.buttonEncrypt  {
+    background-color: #89d6fb;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-width: 1px;
+}
+
+.result-box  {
+    border: 2px solid black;
+    padding: 15px;
+    font-family: monospace;
+    margin-top: 15px;
+}
+
+.copy-icon  {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  
+}
+
+.buttonDraggable{
+    background-color: #89d6fb;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    border-width: 1px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+}
+
+.drag  {
+    width: 150px; 
+    height: 150px; 
+    background-color: #ddd; 
+    text-align: center; 
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input  {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+

@@ -12,7 +12,7 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="learn.html">Learn</a>
-        <a href="explore.html">Explore</a>
+        <a href="explore.html" class="active">Explore</a>
         <a href="contact.html">Contact</a>
     </nav>
     <main class="container">
@@ -20,10 +20,24 @@
         <p>Use the tool below to encrypt and decrypt messages using different shift values.</p>
         <label for="text">Enter text:</label>
         <input type="text" id="text" placeholder="Enter text">
+        <br>
         <label for="shift">Shift:</label>
         <input type="number" id="shift" value="3" min="1" max="25">
-        <button onclick="encrypt()">Encrypt</button>
-        <p><strong>Result:</strong> <span id="result"></span></p>
+        <br>
+        <label for="case_sensitive">Case Sensitive</label>
+        <input type="checkbox" id="case_sensitive">
+        <br>
+        <button class="buttonEncrypt" onclick="encrypt()">Encrypt</button>
+
+        <p><strong>Result:</strong></p>
+        <div class="result-wrapper">
+            <span><strong>Result:</strong></span>
+            <div id="result" class="result-box"></div>
+            <label for="copy-icon">Copy Here</label>
+            <img id="copy-icon" src="CopySign.png" alt="Copy" title="Copy to clipboard" class="copy-icon">
+          </div>
+          
+
     </main>
     <footer>2025 Caesar Cipher Learning</footer>
     <script src="script.js"></script>
