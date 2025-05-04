@@ -1,0 +1,34 @@
+Caesar Cipher Learning – Summary Document
+
+1. Project Specification
+This web application is designed to teach users about the Caesar Cipher, one of the simplest and earliest encryption methods. The project features a homepage, educational content, 
+and an interactive cipher tool that lets users enter messages and shift values to see real-time encryption. It also includes interactive elements like draggable widgets, 
+animated text, and plugin-enhanced features to enrich user experience.
+
+2. Stakeholder/Client Needs & Future Plan
+The target users are students and beginners in cybersecurity or computer science who want to learn how classical encryption works. The tool is intuitive, visually clean, and interactive to 
+suit both casual learners and educators.
+
+Future Improvements:
+- Add decryption functionality alongside encryption.
+- Extend the tool to support additional ciphers like Vigenère or ROT13.
+- Add mobile responsiveness.
+- Host content on a custom domain or educational subdomain.
+- Include interactive history and examples of cipher use.
+
+3. Spelling and Grammar
+All written content on the site, including instructional paragraphs and labels, was carefully reviewed for proper spelling and grammar. The site maintains a consistent and professional 
+tone appropriate for educational use.
+
+4. Formatting and Writing Style
+The writing style is concise, instructional, and clear. Headings are used to organize information, and text is presented in readable sections. The result output and copy icon are aligned with 
+accessibility and user expectations.
+
+Summary of Features:
+- Typed.js for animated home page messaging.
+- jQuery UI Draggable box ("Meet the Author").
+- AJAX request loads Caesar Cipher description into the footer.
+- Copy-to-clipboard icon beside result box.
+- Lightbox2-enabled image on the home page.
+- Fully responsive form inputs for cipher encryption.
+- Organized, styled, and cleanly formatted layout.

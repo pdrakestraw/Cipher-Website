@@ -1,3 +1,5 @@
+
+/* ===== Base Pages Style ===== */
 body {
     font-family: monospace;
     background-color: #f7f7f7;
@@ -6,16 +8,22 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* ===== Main Title Style ===== */
 header {
     background-color: #89d6fb;
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
 }
+
+/* ===== Navigation Bar Style ===== */
 nav {
     background-color: #333333;
     padding: 10px;
 }
+
+/* ===== Naviagtion Bar Link Style ===== */
 nav a {
     color: #ffffff;
     margin: 0 15px;
@@ -23,11 +31,13 @@ nav a {
     font-size: 18px;
 }
 
+/* ===== Naviagtion Bar Link Active Style ===== */
 nav a.active {
     font-weight: bold;
     text-decoration: underline;
 }
 
+/* ===== Base Container Style ===== */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -37,55 +47,49 @@ nav a.active {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== Footer Style ===== */
+.footer {
+    display: none;
+}
+
+/* ===== Base Input Style ===== */
+input  {
+    margin-top: 20px;
+}
+
+/* ===== Base Link Style ===== */
+a {
+    text-decoration: none;
+}
+
+/* ===== Index Page Image Style ===== */
 img.one{
     width: 20%;
     height: 20%;
 }
 
-#draggable {
-    width: 150px;
-    height: 150px;
-    background-color: #ddd;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #aaa;
-    cursor: move;
-    margin-top: 20px;
-  }
-  
-
+/* ===== About Page Image Style ===== */
 img.two{
     width: 50%;
     height: 50%;
 }
 
-
-
-.encrypt-box{
-    background: #ffffff;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+/* ===== Copy Icon Image Style ===== */
+.copy-icon  {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
-
-
-.footer {
-    display: none;
-}
-
-.bio_container{
-    display: flex;
-    align-items: center;
-}
+/* ===== Contact Page Image Icon ===== */
 .bio-image {
     width: 150px;
     height: auto;
     margin-left: 20px;
 }
 
+/* ===== Base Button Style ===== */
 .button  {
     background-color: #89d6fb;
     color: black;
@@ -99,37 +103,24 @@ img.two{
     margin-top: 20px
 }
 
+/* ===== Base Button Hover Style ===== */
 .button :hover  {
     background-color: #d4f0fc;
 }
 
-.buttonEncrypt  {
-    background-color: #89d6fb;
-    color: black;
-    border-radius: 5px;
+/* ===== Draggable Style ===== */
+#draggable {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
     text-align: center;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    cursor: move;
     margin-top: 20px;
-    border-width: 1px;
 }
 
-.result-box  {
-    border: 2px solid black;
-    padding: 15px;
-    font-family: monospace;
-    margin-top: 15px;
-}
-
-.copy-icon  {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  
-}
-
+/* ===== Button For Draggable Style ===== */
 .buttonDraggable{
     background-color: #89d6fb;
     color: black;
@@ -142,6 +133,7 @@ img.two{
     display: inline-block;
 }
 
+/* ===== Text for Draggable Style ===== */
 .drag  {
     width: 150px; 
     height: 150px; 
@@ -152,13 +144,44 @@ img.two{
     margin-right: auto;
 }
 
-input  {
-    margin-top: 20px;
+  
+/* ===== Encrypt Container Style ===== */
+.encrypt-box{
+    background: #ffffff;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
 }
 
-a {
-    text-decoration: none;
+/* ===== Encrypt Button Style ===== */
+.buttonEncrypt  {
+    background-color: #89d6fb;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-width: 1px;
 }
+
+/* ===== Encryption Result Box Style ===== */
+.result-box  {
+    border: 2px solid black;
+    padding: 15px;
+    font-family: monospace;
+    margin-top: 15px;
+}
+
+/* ===== Contact Page Container Style ===== */
+.bio_container{
+    display: flex;
+    align-items: center;
+}
+
 
 
 

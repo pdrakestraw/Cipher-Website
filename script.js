@@ -1,3 +1,7 @@
+/**
+ * Encrypts a String, text using two modulars, shift and case_sensitive 
+ * Returns to the result in the explore page
+ */
 function encrypt() {
     let text = document.getElementById("text").value;
     let shift = parseInt(document.getElementById("shift").value);
@@ -22,6 +26,11 @@ function encrypt() {
     document.getElementById("result").innerText = result;
 }
 
+/**
+ * Cylces through a list of Strings and types them out at a given speed
+ * Current forward speed: 40
+ * Current backward speed: 10
+ */
 $(function() {
     var typed = new Typed('#typed-text', {
       strings: [
@@ -30,12 +39,18 @@ $(function() {
         "Try encrypting your own message!"
       ],
       typeSpeed: 40,
-      backSpeed: 20,
+      backSpeed: 10,
       loop: true
     });
-
-    $("#draggable").draggable();
   });
+
+/**
+ * Makes the box in the 'index.html' page draggable
+ */
+$(function() {
+  $("#draggable").draggable();
+})
+
 
   $(document).ready(function() {
     console.log("Ready to learn");
